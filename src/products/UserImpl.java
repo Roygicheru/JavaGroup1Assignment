@@ -20,7 +20,7 @@ public class UserImpl implements UserI {
         user.setEmail(email);
         user.setIdNumber(idNumber);
 
-    }
+        return user;}
 
     @Override
     public Product puchaseProduct(Product product, User user) {
