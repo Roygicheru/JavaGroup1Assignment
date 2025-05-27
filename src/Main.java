@@ -34,6 +34,10 @@ public class Main {
         UserI userInterface = new UserImpl();
         User user = userInterface.createUser();
 
+        // Simple null check
+        if (user != null) {
+            System.out.println("User created: " + user.getName());
+        }
 
     }
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text

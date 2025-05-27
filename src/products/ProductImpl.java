@@ -1,20 +1,23 @@
 package products;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class ProductImpl implements ProductI{
 
+    private List<Product> products = new ArrayList<>(); // Add instance variable
 
     @Override
     public Product createProduct(Product product, ProductType productType) {
         product.setProductType(productType);
+        products.add(product); // Add to list when created
         return product;
     }
 
     @Override
     public List<Product> getProducts() {
-        return List.of();
+        return new ArrayList<>(products);
     }
 
     @Override

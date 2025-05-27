@@ -10,5 +10,15 @@ public class BaseModel {
 
     public BaseModel() {
         this.dateCreated = new Date();
+//        this.id = id;
+        this.id = System.currentTimeMillis();
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public Date getDateCreated() {
+        return dateCreated;
     }
 }
