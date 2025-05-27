@@ -165,7 +165,7 @@ public String displayDetails()  // Detailed information
 6. **Apply Discounts** → Apply Discounts → Choose discount type
 7. **View Results** → View Catalog → See updated prices and quantities
 
-## 🛠 Technical Highlights
+##  Technical Highlights
 
 ### Array-Based Storage
 - Dynamic array resizing when capacity exceeded
